@@ -1,0 +1,11 @@
+{
+  "name": "exercise-3",
+  "private": true,
+  "scripts": {
+    "build": "tsc customer.ts --removeComments --target ES2020",
+    "start": "node customer.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

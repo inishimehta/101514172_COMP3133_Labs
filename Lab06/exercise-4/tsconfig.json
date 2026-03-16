@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "rootDir": ".",
+    "removeComments": true
+  },
+  "include": ["customer.ts", "main.ts"],
+  "exclude": ["node_modules"]
+}

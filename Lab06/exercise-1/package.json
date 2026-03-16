@@ -1,0 +1,11 @@
+{
+  "name": "exercise-1",
+  "private": true,
+  "scripts": {
+    "build": "tsc hello-world.ts --removeComments --target ES2020",
+    "start": "node hello-world.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
