@@ -1,0 +1,30 @@
+<section class="heroes-layout">
+  <div class="panel">
+    <h2>My Heroes</h2>
+    <p class="helper">The custom pipe removes dashes from hero names in the UI.</p>
+
+    <ul class="hero-list">
+      <li
+        *ngFor="let hero of heroes"
+        [class.selected]="hero === selectedHero"
+        (click)="onSelect(hero)"
+      >
+        <span class="badge">{{ hero.id }}</span>
+        <span>{{ hero.name | removeSpaces }}</span>
+      </li>
+    </ul>
+
+    <div class="directive-demo">
+      <label for="format-demo">Directive demo</label>
+      <input
+        id="format-demo"
+        inputFormat
+        [(ngModel)]="formatDemoText"
+        placeholder="type here and click away"
+      />
+      <p>Current value: {{ formatDemoText }}</p>
+    </div>
+  </div>
+
+  <app-hero-detail [hero]="selectedHero" />
+</section>

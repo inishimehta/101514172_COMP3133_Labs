@@ -1,0 +1,13 @@
+<section class="dashboard">
+  <div class="intro">
+    <h2>Top Heroes</h2>
+    <p>This view covers the tutorial's nested component flow with a dashboard and a dedicated heroes page.</p>
+  </div>
+
+  <div class="cards">
+    <a *ngFor="let hero of topHeroes" routerLink="/heroes" class="card">
+      <span>#{{ hero.id }}</span>
+      <strong>{{ hero.name | removeSpaces }}</strong>
+    </a>
+  </div>
+</section>

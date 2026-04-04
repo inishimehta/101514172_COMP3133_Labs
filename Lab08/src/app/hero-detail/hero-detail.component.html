@@ -1,0 +1,15 @@
+<section class="detail-card" *ngIf="hero; else emptyState">
+  <h2>{{ hero.name | removeSpaces }} Details</h2>
+  <p><strong>ID:</strong> {{ hero.id }}</p>
+  <p><strong>Power:</strong> {{ hero.power }}</p>
+
+  <label for="hero-name">Hero name</label>
+  <input id="hero-name" [(ngModel)]="hero.name" placeholder="name" />
+</section>
+
+<ng-template #emptyState>
+  <section class="detail-card muted">
+    <h2>Select a hero</h2>
+    <p>Choose a hero from the list to view and update its details.</p>
+  </section>
+</ng-template>

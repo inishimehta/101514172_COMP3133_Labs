@@ -1,0 +1,37 @@
+.dashboard {
+  padding: 24px;
+  border-radius: 18px;
+  background: #fff7ed;
+  border: 1px solid #fdba74;
+}
+
+.intro h2 {
+  margin-top: 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.card {
+  display: block;
+  padding: 18px;
+  border-radius: 16px;
+  background: #ffffff;
+  color: #9a3412;
+  text-decoration: none;
+  box-shadow: 0 12px 24px rgba(154, 52, 18, 0.08);
+}
+
+.card span,
+.card strong {
+  display: block;
+}
+
+.card strong {
+  margin-top: 10px;
+  font-size: 1.05rem;
+}
